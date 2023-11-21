@@ -8,11 +8,10 @@
 git clone --recursive https://github.com/phyzhenli/rl_logic_synthesis.git
 ```
 
-### Step1: compile abc python interface
+### Step1: compile abc and cirkit python interface
+`cd abc_py/abc; make -j16 ABC_USE_NO_READLINE=1 ABC_USE_STDINT_H=1 ABC_USE_PIC=1 libabc.a; cd ../; make; cd ../cirkit_py; make -j16`
 
-### Step2: compile cirkit python interface
-
-### Step3: prepare rl-baselines3-zoo environment
+### Step2: prepare rl-baselines3-zoo environment
 ```
 git clone https://github.com/DLR-RM/rl-baselines3-zoo.git
 cd rl-baselines3-zoo/
