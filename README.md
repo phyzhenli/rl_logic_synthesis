@@ -27,16 +27,12 @@ cd ../
 
 ## Usage
 ```
-python3 rl-baselines3-zoo/train.py \
+PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py \
     --env abc-v0 \
-    --log-folder logs_abc_v0 \
+    --log-folder logs \
     --gym-packages gym_eda \
     --algo ppo \
-    --env-kwargs 'bench:"abc_py/a.blif"'
-```
-or
-```
-./run_bashs/run_abc_exe_opt.sh
+    --env-kwargs 'bench:"abc_py/s838.blif"'
 ```
 
 ### Reference:
