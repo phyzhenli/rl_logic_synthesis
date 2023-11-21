@@ -16,6 +16,7 @@ git clone --recursive https://github.com/phyzhenli/rl_logic_synthesis.git
 
 ### Step3: prepare rl-baselines3-zoo environment
 ```
+git clone https://github.com/phyzhenli/rl_logic_synthesis.git
 cd rl-baselines3-zoo/
 git checkout v1.5.0
 cp ../utils/exp_manager.py ./utils
