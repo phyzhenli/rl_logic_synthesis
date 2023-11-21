@@ -34,5 +34,5 @@ PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py \
     --env-kwargs 'bench:"abc_py/s838.blif"'
 ```
 
-### Reference:
+## Reference:
 [1] Qian, Yu, Xuegong Zhou, Hao Zhou, and Lingli Wang. "Efficient Reinforcement Learning Framework for Automated Logic Synthesis Exploration." In 2022 International Conference on Field-Programmable Technology (ICFPT), pp. 1-6. IEEE, 2022.
