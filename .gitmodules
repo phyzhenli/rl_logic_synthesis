@@ -1,0 +1,9 @@
+[submodule "abc_py"]
+	path = abc_py
+	url = https://github.com/phyzhenli/abc_py.git
+[submodule "cirkit_py"]
+	path = cirkit_py
+	url = https://github.com/phyzhenli/cirkit_py.git
+[submodule "rl-baselines3-zoo"]
+	path = rl-baselines3-zoo
+	url = https://github.com/DLR-RM/rl-baselines3-zoo.git
