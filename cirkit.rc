@@ -1,0 +1,32 @@
+# commands
+alias "rfz(.*)" "refactor --max_pis=4 -z{}"
+alias "rf(.*)" "refactor --max_pis=4{}"
+alias "rwz(.*)" "cut_rewrite --multiple -z{}"
+alias "rw(.*)" "cut_rewrite --multiple{}"
+#alias "rsz(.*)" "resub -z{}"
+alias "rs(.*)" "resub{}"
+alias "rd(.*)" "reduction{}"
+alias "bzm(.*)" "mighty --area_aware{}"
+alias "bl(.*)" "balancing{}"
+
+# cirkit flows
+alias "compress2" "bzm; rw; rf; bzm; rw; rwz; bzm; rfz; rwz; bzm"
+alias "compress2rs" "bzm; rs --max_pis 6; rw; rs --max_pis 6 --depth 2; rf; rs --max_pis 8; bzm; rs --max_pis 8 --depth 2; rw; rs --max_pis 10; rwz; rs --max_pis 10 --depth 2; bzm; rs --max_pis 12; rfz; rs --max_pis 12 --depth 2; rwz; bzm"
+alias "shake" "rw; rf; rfz; rwz; rfz"
+
+# LSOracle scripts
+alias "15rw" "rw; rw; rw; rw; rw; rw; rw; rw; rw; rw; rw; rw; rw; rw; rw"
+alias "15rwz" "rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz; rwz"
+alias "aig_script2" "bl; rd; rw; rf --strategy=2; bl; rd; rw; rwz; bl; rd; rfz --strategy=2; rwz; bl; rd"
+alias "aig_script3" "rd; rw; rf --strategy=3; bl; rw; rwz; bl; rfz --strategy=3; rwz; bl; rd"
+alias "aig_script4" "rw; rs; rw; rf --strategy=3; rd; rs; rf --strategy=3; rs; rw; rwz; rfz --strategy=3; rwz; rd; rs; rwz; rwz; rwz; rd"
+alias "aig_script5" "rd; 15rw; rf; bl; 15rw; 15rwz; bl; rfz; 15rwz; bl; rd"
+alias "aig_script" "rw; rd; rw; rw; rf; rw; rd; rw; rw; rw; rw; rw; rw; rd"
+alias "mig_script2" "bl; rw; rf --strategy=1; bl; rw; rwz; bl; rfz --strategy=1; rwz; bl"
+alias "mig_script3" "mighty; rw; rw; rwz; rw; rw; rwz"
+alias "mig_script" "mighty; rw; rw; mighty; rw; rw; mighty; rw; rw; mighty"
+alias "xmg_script" "mighty"
+alias "xag_script" "rw; rw; bl; rf; fanin_opt"
+
+
+alias "resyn2" "bl; rw; rf; bl; rw; rwz; bl; rfz; rwz; bl"
