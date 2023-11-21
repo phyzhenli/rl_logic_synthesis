@@ -3,10 +3,6 @@
 
 ## Build
 
-### Step0: clone repository
-```
-git clone --recursive https://github.com/phyzhenli/rl_logic_synthesis.git
-```
 
 ### Step1: download and compile abc python interface
 ```
@@ -28,26 +24,30 @@ make -j16
 cd ../
 ```
 
-### Step3: prepare rl-baselines3-zoo environment
+### Step3: prepare rl-baselines3-zoo
 ```
 git clone https://github.com/DLR-RM/rl-baselines3-zoo.git
 cd rl-baselines3-zoo/
 git checkout v1.5.0
 cp ../utils/exp_manager.py ./utils
+cd ../
+```
+
+### Step4: prepare conda environment
+```
 conda create --name rl_zoo3 python=3.7
 conda activate rl_zoo3
 pip install -r rl-baselines3-zoo/requirements.txt
 pip install dgl
-cd ../
 ```
 
 ## Usage
 ```
-PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py \
-    --env abc-v0 \
-    --log-folder logs \
-    --gym-packages gym_eda \
-    --algo ppo \
+PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py
+    --env abc-v0
+    --log-folder logs
+    --gym-packages gym_eda
+    --algo ppo
     --env-kwargs 'bench:"abc_py/s838.blif"'
 ```
 
