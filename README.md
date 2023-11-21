@@ -9,8 +9,10 @@ git clone --recursive https://github.com/phyzhenli/rl_logic_synthesis.git
 ```
 
 ### Step1: compile abc python interface
+`cd abc_py` and follow the instructions.
 
 ### Step2: compile cirkit python interface
+`cd cirkit_py` and follow the instructions.
 
 ### Step3: prepare rl-baselines3-zoo environment
 ```
