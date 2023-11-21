@@ -1,6 +1,0 @@
-[submodule "abc_py"]
-	path = abc_py
-	url = https://github.com/phyzhenli/abc_py.git
-[submodule "cirkit_py"]
-	path = cirkit_py
-	url = https://github.com/phyzhenli/cirkit_py.git
