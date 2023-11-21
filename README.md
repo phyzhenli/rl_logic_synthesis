@@ -43,11 +43,11 @@ pip install dgl
 
 ## Usage
 ```
-PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py
-    --env abc-v0
-    --log-folder logs
-    --gym-packages gym_eda
-    --algo ppo
+PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py \
+    --env abc-v0 \
+    --log-folder logs \
+    --gym-packages gym_eda \
+    --algo ppo \
     --env-kwargs 'bench:"abc_py/s838.blif"'
 ```
 
