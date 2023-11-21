@@ -26,7 +26,8 @@ abc-v0:
   ent_coef: 0.0
   learning_rate: !!float 1e-3
   clip_range: 0.2
-  device: 'cuda:0'
+  # device: 'cuda:0'
+  device: cpu
   batch_size: 50
 
 abc-exe-opt-v0:
