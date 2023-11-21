@@ -1,0 +1,30 @@
+
+abc_exe: /home/zli/abc/abc
+
+init_bench: /home/zli/Desktop/benchmarks-master/arithmetic/log2.v
+step_bench: /home/zli/Desktop/log2_step.v
+
+actions:
+  - rewrite
+  - rewrite -z
+  - rewrite -z
+  - rewrite -z -l
+  - refactor
+  - refactor -z
+  - refactor -l
+  - refactor -z -l
+  - resub
+  - resub -z
+  - resub -l
+  - resub -z -l
+  - balance
+  - fraig
+  - '&get -n; &dsdb; &put'
+  - dc2
+
+optimize: mix # are, delay, or mix
+
+baseline: balance; rewrite; refactor; balance; rewrite; rewrite -z; balance; refactor -z; rewrite -z; balance # resyn2
+
+max_seq_len: 20
+seq_end: Not_Time

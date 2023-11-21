@@ -1,0 +1,30 @@
+#{"t_start": 1683017120.318573, "env_id": "abc-v0"}
+r,l,t,nd,lev,seq
+0.205908,20,4.071423,5120,189,rw; rf; b; rwz; rw; rfz -l; rfz -l; rwz -l; rw; b -l; rwz -l; b; b -l; rw -l; b; rfz -l; rwz; b -l; rf -l; rf -l
+0.263444,20,5.818457,5071,177,b; b; rw -l; b; rwz -l; b; rwz; rf; rw; rfz; rfz; b; rwz; rfz -l; rwz; b -l; b; b; rfz -l; rwz
+0.272372,20,7.762484,5038,176,rf; rf -l; rw -l; rfz -l; rwz; b -l; b -l; rwz -l; rf; b; b -l; b; rw -l; rwz; rwz -l; b -l; rfz -l; rf -l; rfz; rw
+0.278373,19,9.519951,5025,175,b; rw -l; rf; b; rf; rw; b -l; rwz -l; rwz -l; rfz -l; rwz -l; rwz -l; rw; rf; rfz -l; b -l; rfz; rwz -l; rfz -l
+0.049179,15,11.309565,5315,218,rf; b; rw; rw; rwz; rwz -l; rfz; rw -l; rfz -l; rw; rw; rf -l; rf -l; b; rfz
+0.267171,15,13.170159,5017,178,rw; rwz -l; rw; b -l; rf; rwz -l; rwz -l; rf; rfz -l; rfz; rfz -l; rw -l; rwz; rwz -l; rf -l
+0.254225,17,14.736861,5021,181,rfz; rwz -l; rf -l; b; b; rwz -l; rfz -l; rwz -l; rwz -l; rf; rfz -l; rfz -l; rfz; b; rw; rfz -l; rw -l
+0.27708,20,16.433541,5034,175,rfz; b; rw -l; b -l; b; rf -l; rwz; rfz -l; rfz; rf -l; b -l; rf; rwz -l; b -l; rf -l; rw; rf -l; rf -l; b -l; rf -l
+0.273527,13,17.843518,5030,176,rw; rw; rwz; rw -l; rfz -l; rwz; rf; rf; rfz -l; rwz; rfz; rf -l; rwz
+0.288767,20,19.627565,5039,172,rwz -l; b -l; b -l; rf -l; b -l; rw; rf -l; b -l; rwz -l; rfz -l; b -l; rwz; rfz; rf -l; rf -l; rw; rfz -l; rw; b -l; rwz
+0.29599,17,21.286992,5017,171,rw; rw -l; rf -l; rf; rwz; rfz -l; rwz; rw -l; b; b -l; rfz; rwz; rf; rw -l; rf; b -l; rw -l
+0.220134,17,23.297926,5137,185,b; rf; rf; rf -l; rw; b; rw -l; b; rf -l; rwz -l; rf -l; rwz -l; rfz -l; rwz; b -l; rf -l; rwz
+0.143607,16,24.961339,5218,200,rfz; rfz -l; rfz -l; rwz -l; rw; rf; rf -l; rfz; rw; rf; rwz -l; rw; rfz; b; rw -l; rwz
+0.036521,18,26.643723,5265,223,rf; b; rfz -l; rf; rfz; b; b -l; rw -l; b -l; rw -l; rwz -l; rwz; rwz; rwz -l; rfz; rf -l; rf -l; rw
+0.143607,18,28.285626,5218,200,b; rw; rw; rf -l; rf; b -l; rf; rf; rwz; rw -l; rwz -l; rwz -l; b -l; rw; rw; rw; rwz; rwz
+0.205753,17,30.024556,5121,189,rw; b; rfz -l; rf; rfz; rfz -l; rwz; rf -l; rfz -l; rf; rfz -l; b; rwz; rf -l; rf -l; rf; rf -l
+0.251699,18,31.715378,5066,180,rfz; b; rwz; rwz -l; b -l; rw; rwz; rfz; b -l; rfz -l; rf -l; rfz -l; rfz; rw; rwz -l; rw -l; b -l; rfz
+0.252142,20,33.944253,5063,180,b; rfz -l; rfz -l; b; b; rfz; b -l; b; b -l; rw -l; rf -l; rfz; rfz -l; rwz; rwz -l; rwz; rfz; rf; rfz -l; rfz -l
+0.263519,15,35.551674,5042,178,rw -l; rwz -l; rw; rw; rw; rwz -l; rfz -l; rw; rwz -l; rwz -l; b; rfz; rf -l; b; rwz -l
+0.250364,15,37.329779,5047,181,b -l; rwz -l; rwz -l; rwz; rfz; rf -l; b; rfz; rwz -l; rwz; rf; rwz -l; rw -l; rf; rwz
+0.24891,14,38.965953,5029,182,rwz -l; rwz; rwz; rw; b -l; rwz; b; rfz; rwz; rfz -l; rw; rf -l; rf; rwz -l
+0.293323,15,40.55636,5036,171,rw; rwz -l; rfz -l; rwz; b -l; rfz -l; rw; rwz; rw -l; rwz; rwz -l; b -l; rwz; rf -l; rw
+0.060664,20,42.510777,5275,217,rwz -l; rw -l; rwz; rfz; rw; b -l; rf -l; b; b; rw -l; b -l; rwz; rwz -l; b -l; b -l; rf -l; rfz; rfz; rw -l; rf -l
+0.227876,18,44.479504,5086,185,rwz -l; rfz; rwz -l; b; rfz; rf; rwz -l; rwz; rw; rwz; b; b -l; b -l; b -l; rwz; rwz; rfz -l; rwz
+0.258353,20,46.259591,5049,179,b -l; b -l; rfz -l; rwz; rfz -l; rwz; rw; rwz; rwz -l; rfz -l; b; rfz -l; rw; b; b; rw -l; rf -l; b -l; rf; rwz
+0.27035,18,48.014896,5052,176,rf; b -l; rfz; rwz -l; rw; b; b -l; rwz; rw; b -l; rwz; rwz; rf; rw -l; rf; rfz -l; rwz; rfz
+0.262496,14,49.568914,5049,178,rwz -l; rfz; rf; rwz; rf; rwz -l; rwz; rw; rwz; rwz -l; rfz -l; rwz -l; b -l; rfz
+0.255687,16,51.093618,5039,180,rf; rf -l; rwz -l; rwz -l; rf; rf -l; rfz -l; rfz -l; b -l; rwz; b; rf; rf -l; rf -l; rwz; rwz -l
