@@ -3,8 +3,24 @@
 
 ## Build
 
+### Step1: prepare rl-baselines3-zoo
+```
+git clone https://github.com/DLR-RM/rl-baselines3-zoo.git; \
+cd rl-baselines3-zoo/; \
+git checkout v1.5.0; \
+cp ../utils/exp_manager.py ./utils; \
+cd ../
+```
 
-### Step1: download and compile abc python interface
+### Step2: prepare conda environment
+```
+conda create --name rl_zoo3 python=3.7; \
+conda activate rl_zoo3; \
+pip install -r rl-baselines3-zoo/requirements.txt; \
+pip install dgl
+```
+
+### Step3: download and compile abc python interface
 ```
 git clone https://github.com/phyzhenli/abc_py.git; \
 cd abc_py; \
@@ -16,7 +32,7 @@ make; \
 cd ../
 ```
 
-### Step2: download and compile cirkit python interface
+### Step4: download and compile cirkit python interface
 ```
 git clone https://github.com/phyzhenli/cirkit_py.git; \
 cd cirkit_py; \
@@ -24,31 +40,35 @@ make -j16; \
 cd ../
 ```
 
-### Step3: prepare rl-baselines3-zoo
+### Step5: download and compile iMAP
 ```
-git clone https://github.com/DLR-RM/rl-baselines3-zoo.git; \
-cd rl-baselines3-zoo/; \
-git checkout v1.5.0; \
-cp ../utils/exp_manager.py ./utils; \
-cd ../
-```
-
-### Step4: prepare conda environment
-```
-conda create --name rl_zoo3 python=3.7; \
-conda activate rl_zoo3; \
-pip install -r rl-baselines3-zoo/requirements.txt; \
-pip install dgl
+git clone https://gitee.com/oscc-project/iMAP.git; \
+cd iMAP; \
+mkdir build; \
+cd build; \
+cmake ..; \
+make -j 16; \
+cd ../../
 ```
 
 ## Usage
+#### abc-v0:
 ```
 PYTHONPATH=.:abc_py:cirkit_py python3 rl-baselines3-zoo/train.py \
     --env abc-v0 \
     --log-folder logs \
     --gym-packages gym_eda \
     --algo ppo \
-    --env-kwargs 'bench:"abc_py/s838.blif"'
+    --env-kwargs 'bench:"sin.aig"'
+```
+#### imap-exe-v0
+```
+PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.py \
+    --env imap-exe-v0 \
+    --log-folder logs \
+    --gym-packages gym_eda \
+    --algo ppo \
+    --env-kwargs 'imap_exe:"./iMAP/bin/imap"' 'input_file:"sin.aig"' 'step_file:"sin.aig_step"'
 ```
 
 ## Reference:
