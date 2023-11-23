@@ -54,7 +54,7 @@ cd ../../
 ## Usage
 #### abc-v0:
 ```
-PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib rl-baselines3-zoo/train.py \
+PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.py \
     --env abc-v0 \
     --log-folder logs \
     --gym-packages gym_eda \
