@@ -521,6 +521,8 @@ class ExperimentManager(object):
             monitor_kwargs = dict(info_keywords=("is_success",))
         elif self.env_id.startswith("abc") or self.env_id.startswith("cirkit") or self.env_id.startswith("ls-"):
             monitor_kwargs = dict(info_keywords=("nd", "lev", "seq"))
+        elif self.env_id.startswith("imap"):
+            monitor_kwargs = dict(info_keywords=("area", "depth", "seq"))
         if self.env_id in ['abc-asic-step-v0', 'ls-cirkit-step-v1']:
             monitor_kwargs = dict(info_keywords=("nd", "lev", "seq", "step_q"))
 
