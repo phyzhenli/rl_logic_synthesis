@@ -75,12 +75,12 @@ class iMAPExe(gym.Env):
         self.initMapStats = self.getStats(self.mapping)
         print(f"-- init AIG {self.initAigStats}, mapping to {self.mapping}, init {self.initMapStats}\n")
 
-        # if self.initAigStats['area'] < 5000: self.max_seq_len = max_seq_len = 10
-        # if 5000 <= self.initAigStats['area'] < 6000: self.max_seq_len = max_seq_len = 9
-        # if 6000 <= self.initAigStats['area'] < 7000: self.max_seq_len = max_seq_len = 8
-        # if 7000 <= self.initAigStats['area'] < 8000: self.max_seq_len = max_seq_len = 7
-        # if 8000 <= self.initAigStats['area'] < 9000: self.max_seq_len = max_seq_len = 6
-        # if self.initAigStats['area'] >= 9000: self.max_seq_len = max_seq_len = 5
+        # if self.initAigStats['area'] < 5000: self.max_seq_len = 10
+        # if 5000 <= self.initAigStats['area'] < 6000: self.max_seq_len = 9
+        # if 6000 <= self.initAigStats['area'] < 7000: self.max_seq_len = 8
+        # if 7000 <= self.initAigStats['area'] < 8000: self.max_seq_len = 7
+        # if 8000 <= self.initAigStats['area'] < 9000: self.max_seq_len = 6
+        # if self.initAigStats['area'] >= 9000: self.max_seq_len = 5
 
         # self.best_imp = 0
         # self.best_seq_file = input_file+'.seq'
