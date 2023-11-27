@@ -14,6 +14,22 @@
 #   device: 'cuda:7'
 
 # # * for compare ftune iteration5
+imap-exe-batch-v0:
+  n_envs: 1
+  n_timesteps: !!float 2e5
+  policy: 'MlpPolicy'
+  # n_steps: 40  # when max_len=6
+  n_steps: 100  # when max_len=50
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 20
+  ent_coef: 0.0
+  learning_rate: !!float 1e-3
+  clip_range: 0.2
+  # device: 'cuda:0'
+  device: cpu
+  batch_size: 50
+
 imap-exe-v0:
   n_envs: 1
   n_timesteps: !!float 2e5
