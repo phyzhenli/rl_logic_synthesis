@@ -34,6 +34,7 @@ cd ../
 
 ### Step4: download and compile cirkit python interface
 ```
+pip install pybind11
 git clone https://github.com/phyzhenli/cirkit_py.git; \
 cd cirkit_py; \
 make -j16; \
