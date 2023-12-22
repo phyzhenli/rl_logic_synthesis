@@ -1,6 +1,27 @@
 # Efficient Reinforcement Learning Framework for Automated Logic Synthesis Exploration
 
 
+## How to Cite
+
+If you use this repository, we would appreciate a citation for the following article:
+```
+@article{10.1145/3632174,
+author = {Qian, Yu and Zhou, Xuegong and Zhou, Hao and Wang, Lingli},
+title = {An Efficient Reinforcement Learning Based Framework for Exploring Logic Synthesis},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/3632174},
+doi = {10.1145/3632174},
+note = {Just Accepted},
+journal = {ACM Trans. Des. Autom. Electron. Syst.},
+month = {nov},
+keywords = {Majority-Inverter Graph, Reinforcement learning, technology mapping, And-Inverter Graph, logic optimization}
+}
+```
+
+
 ## Build
 
 ### Step1: prepare rl-baselines3-zoo
@@ -52,6 +73,7 @@ make -j 16; \
 cd ../../
 ```
 
+
 ## Usage
 #### abc-v0:
 ```
@@ -74,10 +96,10 @@ PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.
 ```
 or
 ```
-PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.py  --env imap-exe-batch-v0     --log-folder logs_batch     --gym-packages gym_eda  --algo ppo --env-kwargs 'imap_exe:"./iMAP/bin/imap"' 'benchs_yaml_file:"gym_eda/benchs.yaml"'
+PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.py \
+    --env imap-exe-batch-v0 \
+    --log-folder logs_batch \
+    --gym-packages gym_eda \
+    --algo ppo \
+     --env-kwargs 'imap_exe:"./iMAP/bin/imap"' 'benchs_yaml_file:"gym_eda/benchs.yaml"'
 ```
-
-<!---
-## Reference:
-[1] Qian, Yu, Xuegong Zhou, Hao Zhou, and Lingli Wang. "Efficient Reinforcement Learning Framework for Automated Logic Synthesis Exploration." In 2022 International Conference on Field-Programmable Technology (ICFPT), pp. 1-6. IEEE, 2022. 
--->
