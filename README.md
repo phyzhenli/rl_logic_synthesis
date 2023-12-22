@@ -69,7 +69,7 @@ PYTHONPATH=.:abc_py:cirkit_py:iMAP/ai_infra/lib python3 rl-baselines3-zoo/train.
     --log-folder logs \
     --gym-packages gym_eda \
     --algo ppo \
-    -- --trained-agent <trained_model> \
+    --trained-agent <trained_model> \
     --env-kwargs 'imap_exe:"./iMAP/bin/imap"' 'input_file:"sin.aig"' 'step_file:"sin.aig_step"'
 ```
 or
