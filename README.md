@@ -24,6 +24,8 @@ keywords = {Majority-Inverter Graph, Reinforcement learning, technology mapping,
 
 ## Build
 
+In `rl_logic_synthesis` directory:
+
 ### Step1: prepare rl-baselines3-zoo
 ```
 git clone https://github.com/DLR-RM/rl-baselines3-zoo.git; \
