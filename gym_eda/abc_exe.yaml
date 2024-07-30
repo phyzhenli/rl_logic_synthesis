@@ -7,7 +7,7 @@ step_bench: /home/zli/Desktop/log2_step.v
 actions:
   - rewrite
   - rewrite -z
-  - rewrite -z
+  - rewrite -l
   - rewrite -z -l
   - refactor
   - refactor -z
